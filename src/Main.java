@@ -64,7 +64,7 @@ class UserData {
         }
 
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(lastName + ".txt", true))) {
-            writer.write(lastName + firstName + middleName + birthDate + " " + phoneNumber + gender);
+            writer.write(lastName + " " + firstName + " " + middleName + " " + birthDate + " " + phoneNumber + " " + gender);
             writer.newLine();
         }
     }
